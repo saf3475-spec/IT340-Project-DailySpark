@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Spark – Today</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Serif+4:wght@400;600&family=Instrument+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/theme.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="site-nav" aria-label="Main">
+      <a class="logo" href="index.html"><span class="logo-dot" aria-hidden="true"></span>Daily Spark</a>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Today</a></li>
+        <li><a href="#">Archive</a></li>
+        <li><a href="#">Bookmarks</a></li>
+        <li><a href="#">Suggest a question</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+        <a class="btn btn-ghost" href="login.html">Log in</a>
+        <a class="btn" href="register.html">Register</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main" class="page">
+    <div class="page-head">
+      <div>
+        <h1>Today’s Spark</h1>
+        <p>Six new posts every day. Log in to comment or bookmark.</p>
+      </div>
+      <a class="btn btn-ghost" href="#">Browse the archive</a>
+    </div>
+
+    <!-- Sample content for Milestone 1. Later milestones will fill these cards from the database and APIs. -->
+    <div class="card-grid">
+      <article class="card card-quote">
+        <h2 class="card-label">Quote of the day</h2>
+        <blockquote>“Well begun is half done.”</blockquote>
+        <cite>Aristotle</cite>
+        <div class="card-foot"><span>12 comments</span><a href="login.html">Join the discussion</a></div>
+      </article>
+
+      <article class="card card-image">
+        <svg viewBox="0 0 320 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Placeholder illustration for the image of the day">
+          <rect width="320" height="240" fill="var(--tint)"/>
+          <circle cx="220" cy="82" r="34" fill="var(--accent)"/>
+          <path d="M0 190 L70 110 L120 160 L180 95 L260 175 L320 130 V240 H0Z" fill="var(--blue)" opacity=".55"/>
+          <path d="M0 215 L90 150 L150 200 L230 140 L320 205 V240 H0Z" fill="var(--blue)"/>
+        </svg>
+        <div class="card-body">
+          <h2 class="card-label">Image of the day</h2>
+          <p>A featured picture with its title and credit will appear here.</p>
+          <div class="card-foot"><span>7 comments</span><a href="login.html">Bookmark</a></div>
+        </div>
+      </article>
+
+      <article class="card card-fact">
+        <h2 class="card-label">Fun fact</h2>
+        <p>Honey found in ancient Egyptian tombs was still safe to eat after thousands of years.</p>
+        <div class="card-foot"><span>3 comments</span></div>
+      </article>
+
+      <article class="card card-word">
+        <h2 class="card-label">Word of the day</h2>
+        <div class="word">petrichor<small>noun</small></div>
+        <p>The pleasant smell that follows rain on dry ground.</p>
+        <div class="card-foot"><span>5 comments</span></div>
+      </article>
+
+      <article class="card card-history">
+        <h2 class="card-label">On this day in history</h2>
+        <p><strong>1904:</strong> The first line of the New York City subway opens to the public.</p>
+        <div class="card-foot"><span>4 comments</span></div>
+      </article>
+
+      <article class="card card-question">
+        <h2 class="card-label">Question of the day</h2>
+        <div class="question-text">What’s a skill you picked up by accident?</div>
+        <span class="suggested-by">Suggested by @marisol_k</span>
+        <div class="card-foot"><span>18 answers</span><a href="login.html">Add yours</a></div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">Daily Spark · IT 340 course project</footer>
+</body>
+</html>
